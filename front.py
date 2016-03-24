@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import tornado.web
-from shares.route import route
+from route import Route
 
-@route('r/', name="index")
+@Route(r'/')
 class HomeHandler(tornado.web.RequestHandler):
 	def get(self):
 		self.write('hello,world')

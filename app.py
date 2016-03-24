@@ -10,13 +10,15 @@ import tornado.web
 import tornado.httpserver
 from tornado.options import options, define
 
+
 import config
-from shares.route import Route
-from controlers import front
+import admin
+import front
+from route import Route
 
-print Route.routes()
+print Route.handlers
 
-app = tornado.web.Application(Route.routes(), config.settings)
+app = tornado.web.Application(Route.handlers, config.settings)
 
 class NotFound(tornado.web.RequestHandler):
 	def get(self):
