@@ -1,0 +1,154 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.slideshow{
+  position: relative;
+  width: 100%;
+}
+
+.slideshow:hover .rslides_nav{
+  display: inline-block;
+}
+
+.rslides_nav{
+  position:absolute;
+  top:50%;
+  z-index:100;
+  cursor:pointer;
+  background-image: url("arrows.svg");
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 1px;
+  opacity: 0.5;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(50,50,50,0.4);
+  font-size: 60px;
+  margin-top: -30px;
+  display: none;
+}
+
+.rslides_nav.prev{
+  background-position: 0 -30px;
+  left: 20px;
+}
+.rslides_nav.next{
+  right: 20px;
+}
+.rslides_nav:hover{
+  opacity: 1;
+}
+
+.rslides_tabs{
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
+}
+
+.rslides_tabs li{
+  display: inline-block;
+}
+
+.rslides_tabs li a{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid rgba(255,255,255,.8);
+  cursor: pointer;
+}
+
+.rslides_tabs .rslides_here a,
+.rslides_tabs li a:hover
+{
+  background: #fff;
+}
+
+.rslides li img{
+
+}
+/*
+.rslides_on img{
+  animation-name: slide-scale;
+  animation-duration: 10s;
+  transition-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-scale{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}*/
+
+/* slider contents */
+.rslides .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center !important;
+  opacity: 1;
+}
+
+.rslides .slider-btn{
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="eslider.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="eslider.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.sliderbar').responsiveSlides({
+			nav: true,
+			pager: true,
+			speed: 800,
+			timeout: 10000
+		});
+	});
+	</script>
+	<title></title>
+</head>
+<body>
+<div class="eslider-container">
+	<ul class="sliderbar">
+		<li><img src="bg1.jpg"></li>
+		<li><img src="bg2.jpg"></li>
+		<li><img src="bg3.jpg"></li>
+	</ul>
+</div>
+</body>
+</html>
