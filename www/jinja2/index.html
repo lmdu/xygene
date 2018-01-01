@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.js"></script>
+	<script src="{{ static('eslider/eslider.js') }}"></script>
+	<script src="{{ static('script.js') }}"></script>
+	<link href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ static('eslider/eslider.css') }}">
+	<link rel="stylesheet" href="{{ static('style.css') }}">
+	<title></title>
+</head>
+<body>
+
+<div class="ui sticky padded basic segment">
+	<div class="ui container">
+		<div class="ui huge secondary green menu">
+			<a href="" class="header logo">
+				<img class="item" src="{{ static('img/logo.png') }}">
+			</a>
+			<a href="" class="item">首页</a>
+			<a href="" class="item active">基因检测</a>
+			<div class="right menu">
+				<div class="item">
+					<a href="" class="ui green button">立即订购</a>
+				</div>
+				
+				<!--
+				<div class="item">
+					<div class="ui buttons">
+					  <a class="ui positive button">登录</a>
+					  <div class="or"></div>
+					  <a class="ui button">注册</a>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ui container">
+	<div class="slideshow">
+		<ul class="sliders">
+			<li><img src="{{ static('/img/bg4.png') }}"></li>
+			<li>
+				<img src="{{ static('/img/bg1.jpg') }}">
+				<div class="content">
+					<div>
+						<h3>DOT Navigation</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+						<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="" class="slider-btn">READ MORE</a>
+					</div>
+				</div>
+			</li>
+			<li><img src="{{ static('/img/bg2.jpg') }}"></li>
+			<li><img src="{{ static('/img/bg3.jpg') }}"></li>
+		</ul>
+	</div>
+</div>
+
+<div class="ui vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable divided grid">
+        <div class="three wide column">
+          <h4 class="ui header">Group 1</h4>
+          <div class="ui link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui header">Group 2</h4>
+          <div class="ui link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui header">Group 3</h4>
+          <div class="ui link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+      <div class="ui section divider"></div>
+      <img src="{{ static('img/logo.png') }}" class="ui centered mini image">
+      <div class="ui horizontal small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
